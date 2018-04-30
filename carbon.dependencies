@@ -1,0 +1,17 @@
+[
+  {
+   "repository": "LineageOS/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "branch"     : "lineage-15.1"
+  },
+  {
+    "repository" : "Flex1911/tissot",
+    "target_path": "kernel/xiaomi/msm8953",
+    "branch"     : "oreo"
+  },
+  {
+    "repository" : "VenkatVishalV/android_vendor_xiaomi_tissot",
+    "target_path": "vendor/xiaomi/tissot",
+    "branch"     : "cr-6.1"
+  }
+]
