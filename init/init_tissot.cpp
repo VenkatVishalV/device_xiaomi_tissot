@@ -32,7 +32,6 @@
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
-#include "util.h"
 
 using android::init::property_set;
 
@@ -108,8 +107,7 @@ void check_device()
    }
 }
 
-void vendor_load_properties()
-{
+void vendor_load_properties(){
     init_alarm_boot_properties();
     check_device();
 

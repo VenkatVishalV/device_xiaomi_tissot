@@ -48,10 +48,16 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
 # Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/libbtnv.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
+
+# Bluetooth (shared dependencies) - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_8_0.fw
@@ -75,7 +81,6 @@ etc/permissions/com.quicinc.cne.xml
 framework/cneapiclient.jar
 framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -165,12 +170,11 @@ framework/com.qti.location.sdk.jar|f2e9f1d49201e1bad83008445fdafe9541e9b2bd
 framework/izat.xt.srv.jar|e10f1baf6ae0f70c4a529e5711559cebbc3644c9
 lib64/liblocationservice_jni.so|84fddd9ace2be661d26cad1864281c386b709cb2
 lib64/libxt_native.so|900aa51d3d2f731b906a321e25c259fbab656f1c
-lib64/vendor.qti.gnss@1.0.so|716a812a9f4cdb45c57eb0a6fabb17624a91d553
+lib64/vendor.qti.gnss@1.0.so|392c70592a5759063ee9e09ebcb637bff04aa4fd
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk|397314f080f553489440c63da44d01f482e6b761
 vendor/bin/hw/vendor.qti.gnss@1.0-service|bdf23fe2af07c2afb74721023431446104fd828d
 vendor/bin/loc_launcher|0675f4524d2c9e94f7e978b5e00734c0835ddf15
 vendor/bin/lowi-server|4aa6f305f31ff36fdddc7e3beeb29cf0bf1a9d54
-vendor/bin/slim_daemon|ac7b90dcc27ef1d1fdd6a1c98bc495f90d19ecf4
 vendor/bin/xtra-daemon|059bade8d40396f05fd414b3778cbbeabc5d26e1
 vendor/etc/cacert_location.pem
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc|98655e2adc2158a052b0ecf06b065535f0a2aac7
@@ -199,7 +203,7 @@ vendor/lib64/libslimclient.so
 vendor/lib64/libulp2.so|1a92023fbe40d5042239f3efbdcd82f3299e8b17
 vendor/lib64/libxtadapter.so|7705b2c895dfc91f459f9e69860bc312c16b4216
 vendor/lib64/libxtwifi_ulp_adaptor.so|d2e768c4d5f44a101b12ef668f8b7393a42541ce
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so|249c76153f8de014bf2dd2ab623ee3d87741fbc8
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so|f7e9ee8e3804887a2f3939128e860767e6f27258
 
 # Graphics
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so

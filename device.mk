@@ -32,8 +32,8 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # HWUI overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -123,8 +123,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service
+#    android.hardware.bluetooth@1.0-impl \
+#    android.hardware.bluetooth@1.0-service
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -407,6 +407,9 @@ PRODUCT_PACKAGES += \
 # VNDK-SP:
 PRODUCT_PACKAGES += \
     vndk-sp
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gnss@1.0-v27.so
 
 # Weaver
 PRODUCT_PACKAGES += \

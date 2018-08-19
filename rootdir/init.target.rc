@@ -55,6 +55,8 @@ on fs
     restorecon_recursive   /persist
 
     mount_all fstab.qcom
+
+    setprop sys.usb.ffs.aio_compat 1
     
 on post-fs-data
     mkdir /data/tombstones 0771 system system

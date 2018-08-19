@@ -89,6 +89,8 @@ extern "C"
 #define IPA_RTA_PARAM_PRIORITY    (0x0080)
 #define IPA_RTA_PARAM_METRICS     (0x0100)
 
+#define sockaddr_storage __kernel_sockaddr_storage
+
 
 /*--------------------------------------------------------------------------- 
 	 Type representing function callback registered with a socket listener 

@@ -1,1 +1,2 @@
 add_lunch_combo liquid_tissot-userdebug
+add_lunch_combo liquid_tissot-eng

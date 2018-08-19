@@ -16,7 +16,7 @@
 
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
-# Inherit some common LiquidRemix stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # A/B updater
@@ -53,7 +53,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8953 \
     libgptutils \
-    libz
+    libz \
+    libcutils
 
 PRODUCT_NAME := liquid_tissot
 BOARD_VENDOR := Xiaomi
