@@ -173,6 +173,9 @@ service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 persist.vendor.ims.dropset_feature=0
 
+# RescueParty
+persist.sys.disable_rescue=true
+
 # Time Services
 persist.timed.enable=true
 
