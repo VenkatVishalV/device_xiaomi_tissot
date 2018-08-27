@@ -167,6 +167,10 @@ TARGET_INIT_VENDOR_LIB := libinit_tissot
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_RECOVERY_DEVICE_MODULES := libinit_tissot
 
+# Hack for remove liblight
+$(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
+
+
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
