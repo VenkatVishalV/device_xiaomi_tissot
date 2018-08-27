@@ -1,4 +1,3 @@
-
 VNDK_SP_LIBRARIES := \
     android.hardware.graphics.allocator@2.0 \
     android.hardware.graphics.common@1.0 \
@@ -26,7 +25,8 @@ VNDK_SP_LIBRARIES := \
     libpng \
     libunwind \
     libutils \
-    libz
+    libz \
+    libutilscallstack
 
 EXTRA_VENDOR_LIBRARIES := \
     android.hidl.base@1.0 \
