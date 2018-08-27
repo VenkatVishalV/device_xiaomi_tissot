@@ -30,5 +30,6 @@
 
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 #define BTM_WBS_INCLUDED TRUE
+#undef PROPERTY_VALUE_MAX
 #define BTIF_HF_WBS_PREFERRED TRUE
 #endif
