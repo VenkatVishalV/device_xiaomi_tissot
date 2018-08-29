@@ -262,6 +262,3 @@ service mdtpd /system/vendor/bin/mdtpd
 
 on boot
     write /sys/bus/msm_subsys/devices/subsys4/restart_level related
-
-on property:sys.boot_completed=1
-    swapon_all /vendor/etc/fstab.qcom
